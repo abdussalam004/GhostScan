@@ -1,0 +1,41 @@
+Question,Answer
+What is GhostScan?,GhostScan is a machine learning-based phishing website detection tool. You enter a URL and it analyzes the link's structure to tell you whether the site is likely legitimate or a phishing attempt.
+Who is GhostBot?,"GhostBot is GhostScan's built-in assistant. I'm here to answer questions about how the scanner works, which models are available, and how to use the site."
+What does GhostScan do?,"GhostScan takes a website URL, processes it through a text-based machine learning pipeline, and predicts whether the site is 'good' (legitimate) or 'bad' (phishing), along with a confidence score."
+Who is GhostScan for?,"GhostScan is for anyone who wants a quick second opinion on a suspicious link - everyday users, students learning about cybersecurity, and developers curious about ML-based phishing detection."
+How does GhostScan detect phishing websites?,"GhostScan tokenizes and stems the URL text, converts it into numeric features with a trained CountVectorizer, and feeds those features into a machine learning classifier trained on a labeled dataset of phishing and legitimate URLs."
+Which machine learning models does GhostScan use?,"GhostScan lets you choose between six models: SVM (Linear), Logistic Regression, Naive Bayes, Decision Tree, Random Forest, and XGBoost."
+How accurate is GhostScan?,"Accuracy depends on the model you pick. In testing, SVM and Logistic Regression performed best at around 94% test accuracy, followed by Naive Bayes at about 92%, Decision Tree at about 89%, and Random Forest at about 80%."
+Which model should I choose for scanning?,"SVM (Linear) and Logistic Regression have the highest test accuracy, so they're good default choices. You're free to try other models and compare results."
+What does the confidence percentage mean?,The confidence score shows how certain the selected model is about its prediction. A higher percentage means the model found stronger signals pointing to that result. Not every model can display a confidence score.
+Is GhostScan free to use?,"Yes, GhostScan is free to use through its web interface."
+Do I need to install anything to use GhostScan?,No installation is needed to use the hosted web version - just open the site and enter a URL. Running it locally does require Python and a few libraries.
+What programming language powers GhostScan?,GhostScan's backend is built with Python and Flask. The machine learning models are built with scikit-learn and XGBoost.
+Does GhostScan store the URLs I scan?,GhostScan processes the URL you submit to generate a prediction. Check the site's privacy policy or contact the team for specifics on data retention.
+Is GhostScan 100% accurate?,"No prediction tool is perfect. GhostScan's models score roughly 80-94% accuracy on test data, so results should be treated as a helpful signal, not a guarantee."
+What should I do if GhostScan flags a legitimate site as phishing?,"This can happen occasionally with any machine learning model (a false positive). Use your own judgment alongside the result, and consider trying a different model to compare."
+What should I do if GhostScan misses a phishing site?,"No detector catches everything. Stay cautious with any link that asks for personal information or credentials, even if GhostScan marks it as legitimate."
+Can I use GhostScan on mobile?,"Yes, GhostScan runs in a browser, so it works on both desktop and mobile devices."
+Does GhostScan work in real time?,"Yes, predictions are generated as soon as you submit a URL - there's no waiting period."
+What is the ambient sound feature for?,GhostScan includes optional ambient background music and soft interaction sounds to make the experience feel a bit more atmospheric while you scan.
+How do I turn the background music on or off?,"Use the sound toggle button on the page - it switches the ambient music and interface sounds on or off, and the icon updates to show the current state."
+What dataset was used to train GhostScan's models?,"The models were trained on a labeled dataset of phishing and legitimate website URLs, using URL text patterns as the main signal."
+Can I contribute to GhostScan's source code?,"If GhostScan's code is shared publicly, contributions are typically welcome - check the project's repository or contact the team for contribution guidelines."
+Is GhostScan open source?,That depends on how the project is distributed. Check with the GhostScan team or the project's repository for current licensing details.
+How do I run GhostScan on my own computer?,"Install the required Python packages (Flask, scikit-learn, nltk, xgboost), place the trained model files alongside app.py, and run the Flask app locally."
+What Python libraries does GhostScan use?,"GhostScan relies on Flask for the web app, scikit-learn for most models, XGBoost for gradient boosting, and NLTK for tokenizing and stemming URLs."
+Does GhostScan explain how the detection works?,"Yes - the How It Works section on the site walks through the scanning process step by step, from entering a URL to receiving a result."
+What is the difference between the models GhostScan offers?,"Each model uses a different algorithm to learn patterns from URL text: SVM and Logistic Regression are linear models, Naive Bayes is probability-based, Decision Tree and Random Forest split data into rules, and XGBoost is a gradient-boosted ensemble. They can give slightly different predictions on the same URL."
+Can GhostScan detect all types of phishing?,"No tool can catch every phishing technique. GhostScan focuses on patterns in the URL itself, so it may not catch threats that rely purely on page content or social engineering."
+Does GhostScan check website content or just the URL?,GhostScan's current models analyze the URL text itself rather than the page's content.
+Is my data safe when I use GhostScan?,"GhostScan only processes the URL you submit for prediction purposes. For specific data-handling questions, reach out to the GhostScan team directly."
+How do I report a bug or give feedback?,You can reach out to the GhostScan team through the site's contact option to report issues or share feedback.
+Can I request a new feature for GhostScan?,"Yes, feature suggestions are welcome - contact the GhostScan team with your idea."
+Does GhostScan have an API?,"Currently, GhostScan is used through its web interface. There isn't a separate public API at this time."
+How do I contact the GhostScan team?,Use the contact option available on the GhostScan website to get in touch with the team.
+Can GhostScan be used by businesses?,"GhostScan can be used by anyone who wants to check a URL, including businesses looking for a quick preliminary check - though it shouldn't replace a full security solution."
+Does GhostScan need an internet connection?,The hosted version needs an internet connection to load the page and submit scans. A locally run copy only needs internet if you're fetching updates or dependencies.
+What happens after I submit a URL?,"GhostScan cleans and processes the URL text, runs it through your selected model, and displays whether the site looks legitimate or like phishing, along with a confidence score when available."
+Does GhostScan support all browsers?,"GhostScan is built with standard web technologies and should work in modern browsers like Chrome, Firefox, Edge, and Safari."
+What is GhostBot's purpose on this site?,"GhostBot is here to help you understand GhostScan's features, guide you through scanning a URL, and answer common questions about phishing detection."
+Can I talk to GhostBot about anything other than GhostScan?,"GhostBot is focused on helping with GhostScan-related questions, like how scanning works, which model to use, and site features."
