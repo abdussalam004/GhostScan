@@ -3,7 +3,7 @@ gunicorn==23.0.0
 python-dotenv==1.0.1
 scikit-learn==1.9.0
 xgboost==2.1.1
-pandas==2.2.2
+pandas==2.2.3
 scipy==1.13.1
 
 # GhostBot RAG chatbot
