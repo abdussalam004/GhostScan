@@ -5,7 +5,14 @@ scikit-learn==1.9.0
 xgboost==2.1.1
 pandas==2.2.3
 scipy==1.13.1
-
+Flask==3.0.3
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.8.4
+seaborn==0.13.2
+scikit-learn==1.4.2
+nltk==3.8.1
+wordcloud==1.9.3
 # GhostBot RAG chatbot
 langchain-core==0.2.38
 langchain-community==0.2.16
