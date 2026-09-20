@@ -1,4 +1,18 @@
-flask==3.0.3
+Flask==3.0.3
+gunicorn==23.0.0
+python-dotenv==1.0.1
+scikit-learn==1.9.0
+xgboost==2.1.1
+pandas>=2.2.2
+scipy>=1.13.1
+
+# GhostBot RAG chatbot
+langchain-core>=0.2.38
+langchain-community>=0.2.16
+langchain-groq>=0.1.9
+langchain-huggingface>=0.0.3
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0.1flask==3.0.3
 gunicorn==23.0.0
 python-dotenv==1.0.1
 scikit-learn==1.5.1
